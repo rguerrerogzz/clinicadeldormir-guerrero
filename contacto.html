@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clinica del Dormir</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navMenu1">
+                <li><a href="salud-del-sueno.html">Salud del Sueño</a></li>
+                <li><a href="estudio-del-sueno.html">Estudio del Sueño</a></li>
+            </ul>
+            <div class="logoHeader"><a href="index.html"> <img class="logoHeader" src="clinicadeldormir.png" alt="Clinica del dormir"></a></div>
+            <ul class="navMenu2">
+                <li><a href="https://www.solucionesdelsueno.com/">Tienda CPAP</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="mainFormulario"> <!-- Formulario de contacto -->
+        <form action="">
+
+                <legend>Formulario</legend>            
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre"><br>
+    
+                <label for="apellido"> Apellido: </label>
+                <input type="text" name="apellido" placeholder="Apellido"><br>
+    
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" placeholder="e-mail"><br>
+    
+                <label for="consulta"> Tipo de consulta: </label>
+                <select name="consulta" id="">
+                    <option value="envio">Envío</option>
+                    <option value="cuenta">Problema con mi cuenta</option>
+                    <option value="servicios">Informe sobre servicio</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+    
+                <label for="comentarios"> Comentarios: </label><br>
+                <textarea name="comentarios" id="" cols="50" rows="10"></textarea> <br>
+    
+                <div> Suscríbete al newsletter <input type="checkbox" name="acepta" value="1"> </div>
+    
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            
+        </form>
+    </main>
+
+    <footer>
+        &copy;2022 Desarrollado por: Rodrigo Guerrero
+    </footer>
+</body>
+</html>
