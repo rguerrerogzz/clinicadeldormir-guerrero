@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd">
         <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="clinicadeldormir.png" alt="" width="30" class="d-inline-block align-text-top">
+            <img src="clinicadeldormir.png" alt="Clinica del Dormir" width="30" class="d-inline-block align-text-top">
             <span class="align-bottom">Clinica del Dormir</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,38 +34,32 @@
         </div>
         </div>
     </nav>
-    
-    <main class="mainFormulario"> <!-- Formulario de contacto -->
-        <form action="">
 
-                <legend>Formulario</legend>            
-                <label for="nombre"> Nombre: </label>
-                <input type="text" name="nombre" placeholder="Nombre"><br>
-    
-                <label for="apellido"> Apellido: </label>
-                <input type="text" name="apellido" placeholder="Apellido"><br>
-    
-                <label for="email"> E-mail: </label>
-                <input type="email" name="email" placeholder="e-mail"><br>
-    
-                <label for="consulta"> Tipo de consulta: </label>
-                <select name="consulta" id="">
-                    <option value="envio">Envío</option>
-                    <option value="cuenta">Problema con mi cuenta</option>
-                    <option value="servicios">Informe sobre servicio</option>
-                    <option value="otro">Otro</option>
-                </select><br>
-    
-                <label for="comentarios"> Comentarios: </label><br>
-                <textarea name="comentarios" id="" cols="50" rows="10"></textarea> <br>
-    
-                <div> Suscríbete al newsletter <input type="checkbox" name="acepta" value="1"> </div>
-    
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
-            
-        </form>
-    </main>
+    <div class="mx-3 my-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="" placeholder="correo@electronico.com">
+    </div>
+    <div class="mx-3">
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Elige un motivo</option>
+        <option value="1">Informes</option>
+        <option value="2">Servicios</option>
+        <option value="3">Agendar cita</option>
+    </select>
+    </div>
+    <div class="mx-3 my-3">
+        <label for="comentario" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="" rows="3"></textarea>
+    </div>
+    <div class="form-check mx-3">
+        <input class="form-check-input" type="checkbox" value="" id="">
+        <label class="form-check-label" for="newsletter">
+        Quiero recibir correos y promociones
+        </label>
+    <div class="d-grid col-6 mx-auto">
+    <button type="submit" class="btn btn-primary mx-3 my-3">Enviar</button>
+    </div>
+
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
