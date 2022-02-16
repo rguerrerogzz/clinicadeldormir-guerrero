@@ -1,0 +1,56 @@
+/* ESTILOS GENERALES */
+
+body {
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+}
+
+.heroindex {
+    background-image: url(img/bedsheet.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+/* MODS BOOTSTRAP */
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-boton;
+    border-color: $color-boton;
+    &:hover {
+        color: #fff;
+        background-color: #569eda;
+        border-color: #569eda;
+    }
+}
+
+/* ANIMACIONES Y TRANSICIONES */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.20;
+    }
+    40% {
+        opacity: 0.40;
+    }
+    60% {
+        opacity: 0.60;
+    }
+    80% {
+        opacity: 0.80;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fadein {
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
