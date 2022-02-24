@@ -6,23 +6,54 @@ body {
 }
 
 .heroindex {
-    background-image: url(img/bedsheet.jpg) ;
+    background-image: url(/img/bedsheet.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.herosalud {
+    background-color: #d3e1e6;
+}
+
+/* MAPAS Y EACH */
+
+$redes:(
+    instagram-color: #30618A,
+    youtube-color: #FF0000,
+    facebook-color: #3b5998,
+    twitter-color: #00acee,
+);
+
+@each $red-social, $color-red in $redes {
+    .btn-#{$red-social} {
+        color: $color-red;
+    }
 }
 
 /* MODS BOOTSTRAP */
 
 .btn-primary {
     color: #fff;
-    background-color: $color-boton;
-    border-color: $color-boton;
+    background-color: $color-btn-primary;
+    border-color: $color-btn-primary;
     &:hover {
-        color: #fff;
-        background-color: #569eda;
-        border-color: #569eda;
+        color: $color-btn-primary;
+        background-color: #fff;
+        border-color: $color-btn-primary;
     }
 }
+
+            /* EXTEND */
+.btn-secondary {
+    @extend .btn-primary;
+    background-color: $color-btn-secondary;
+    border-color: $color-btn-secondary;
+    &:hover {
+        color: $color-btn-secondary;
+        border-color: $color-btn-secondary;
+    }
+}
+
 
 /* ANIMACIONES Y TRANSICIONES */
 
@@ -47,10 +78,15 @@ body {
     }
 }
 
+            /* MIXIN */
+@mixin animationfade($name, $duration, $delay, $count) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-iteration-count: $count;
+}
 
 .fadein {
-    animation-name: fadein;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+    @include animationfade(fadein, 0.5s, 0s, 1);
 }
+

@@ -6,21 +6,52 @@ body {
 }
 
 .heroindex {
-  background-image: url(img/bedsheet.jpg);
+  background-image: url(/img/bedsheet.jpg);
   background-position: center;
   background-size: cover;
 }
 
+.herosalud {
+  background-color: #d3e1e6;
+}
+
+/* MAPAS Y EACH */
+.btn-instagram-color {
+  color: #30618A;
+}
+
+.btn-youtube-color {
+  color: #FF0000;
+}
+
+.btn-facebook-color {
+  color: #3b5998;
+}
+
+.btn-twitter-color {
+  color: #00acee;
+}
+
 /* MODS BOOTSTRAP */
-.btn-primary {
+.btn-primary, .btn-secondary {
   color: #fff;
+  background-color: #122945;
+  border-color: #122945;
+}
+.btn-primary:hover, .btn-secondary:hover {
+  color: #122945;
+  background-color: #fff;
+  border-color: #122945;
+}
+
+/* EXTEND */
+.btn-secondary {
   background-color: #3d9be9;
   border-color: #3d9be9;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #569eda;
-  border-color: #569eda;
+.btn-secondary:hover {
+  color: #3d9be9;
+  border-color: #3d9be9;
 }
 
 /* ANIMACIONES Y TRANSICIONES */
@@ -44,6 +75,7 @@ body {
     opacity: 1;
   }
 }
+/* MIXIN */
 .fadein {
   animation-name: fadein;
   animation-duration: 0.5s;
